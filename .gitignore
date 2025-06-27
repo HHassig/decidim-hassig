@@ -8,7 +8,7 @@
 /.bundle
 
 # kamal
-./kamal/*
+.kamal/*
 /config/credentials/master.key
 /config/master.key
 config/credentials/*
