@@ -9,6 +9,10 @@
 
 # kamal
 ./kamal/*
+/config/credentials/master.key
+/config/master.key
+config/credentials/*
+
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -54,3 +58,6 @@
 
 # Ignore Tailwind configuration
 tailwind.config.js
+
+/config/credentials/production.key
+/config/credentials/secret.key
