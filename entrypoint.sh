@@ -1,8 +1,13 @@
 #!/bin/bash
-
 set -e
+
 echo "Delaying startup to give Kamal time to wait..."
 sleep 10
+
+echo "🧹 Cleaning up stale PID files..."
+rm -f /app/tmp/pids/server.pid
+echo "✅ PID files cleaned"
+
 echo "🔍 Checking if the database exists..."
 if ! bundle exec rails db:exists >/dev/null 2>&1; then
   echo "⚠️ Database does not exist. Creating the database..."
